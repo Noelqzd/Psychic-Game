@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+Watch the demo.
 
-You can use the [editor on GitHub](https://github.com/Noqzd9/Psychic-Game/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+You’re going to make a game just like the one in the video. Essentially, the app randomly picks a letter, and the user has to guess which letter the app chose. Put the following text on your page:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Guess what letter I’m thinking of
 
-### Markdown
+Wins: (# of times the user has guessed the letter correctly)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
 
-```markdown
-Syntax highlighted code block
+Guesses Left: (# of guesses left. This will update)
 
-# Header 1
-## Header 2
-### Header 3
+Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
 
-- Bulleted
-- List
+When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Noqzd9/Psychic-Game/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
